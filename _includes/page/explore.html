@@ -1,0 +1,16 @@
+<div class="explore">
+    <!--
+    <div class="explore__devider">*一閃一閃*亮*雞*雞*</div>
+    看屁看
+    <div class="explore__label">瀏覽不同的分類</div>
+    吃光光
+    吃乾淨
+    -->
+    <ul class="categories">
+        <li class="categories__item"><a href="{{ '/' | prepend: site.baseurl }}">全部</a></li>
+        {% for category in site.data.categories %}
+        <li class="categories__item"><a href="{{ '/categories/' | append: category.slug | prepend: site.baseurl }}">#{{ category.name }}</a></li>
+        {% endfor %}
+		<li class="categories__item"><a href="{{ '/about' | prepend: site.baseurl }}">關於我</a></li>
+    </ul>
+</div>

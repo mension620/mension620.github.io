@@ -1,0 +1,7 @@
+<div class="about">
+    <div class="about__devider">おわり</div>
+    <div class="about__text">
+        由 <strong> {% if page.author.fullname %} {{ page.author.fullname }} {% else %} {{ site.author.fullname }} {% endif %}</strong>
+        在 <strong>{{ page.date | date: "%Y年%m月%d日" }}</strong> 熬夜打完
+    </div>
+</div>
